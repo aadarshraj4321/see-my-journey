@@ -1,4 +1,4 @@
-# MISSION: HIRE [YOUR NAME]
+# Mission: Build Out of the Box
 ### An Interactive First-Person Resume
 ```bash
 https://see-my-journey.vercel.app/
