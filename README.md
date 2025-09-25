@@ -1,7 +1,6 @@
 # MISSION: HIRE [YOUR NAME]
 ### An Interactive First-Person Resume
-
-bash```
+```bash
 https://see-my-journey.vercel.app/
 ```
 ---
