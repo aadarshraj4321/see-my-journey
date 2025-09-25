@@ -1,9 +1,9 @@
 # MISSION: HIRE [YOUR NAME]
-### An Interactive First-Person Shooter Resume
+### An Interactive First-Person Resume
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)]([https://see-my-journey.vercel.app/])
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)]([https://www.linkedin.com/in/aadarsh-raj-60676a191/])
-
+bash```
+https://see-my-journey.vercel.app/
+```
 ---
 
 ## [CLICK HERE TO PLAY THE LIVE DEMO]([https://see-my-journey.vercel.app/])
