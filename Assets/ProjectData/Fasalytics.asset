@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: Fasalytics
+  m_EditorClassIdentifier: 
+  title: 'Project: Fasalytics: Multi-Agent AI for Climate-Smart Farming'
+  description: 'Engineered a multi-agent reinforcement learning system that optimizes
+    irrigation, fertilization, and pest control for smarter farming.
+
+
+    Developed
+    a probabilistic weather forecasting engine using LSTM ensembles to deliver uncertainty-aware
+    7-day forecasts.
+
+
+    Integrated 16+ data variables including soil, climate,
+    and crop health metrics to drive precise decision-making.
+
+
+    Built a data
+    ingestion pipeline processing multi-year climate records into actionable datasets.
+
+
+    Fasalytics
+    empowers farmers with AI-driven climate resilience, reducing risks and maximizing
+    yield.'
+  githubLink: https://github.com/aadarshraj4321/fasalytics
+  liveDemoLink: https://github.com/aadarshraj4321/fasalytics

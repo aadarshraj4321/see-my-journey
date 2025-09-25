@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: game
+  m_EditorClassIdentifier: 
+  title: Mobile Game Developer
+  description: 'Developed a mobile game published on Google Play Store, downloaded
+    by 25,000+ users worldwide.
+
+
+    Designed and implemented engaging gameplay
+    mechanics, UI/UX, and performance optimization.
+
+
+    Managed end-to-end development,
+    publishing, and user engagement, achieving global reach and positive feedback.'
+  githubLink: 
+  liveDemoLink: 

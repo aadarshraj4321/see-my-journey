@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: HireMe
+  m_EditorClassIdentifier: 
+  title: Why Hire Me
+  description: "Because I don\u2019t just build for today \u2014 I build for what\u2019s
+    next.\n\nI\u2019ve engineered systems that already run at millions in scale,
+    and I\u2019m only getting started.\n\nEvery project I touch \u2014 from AI pipelines
+    that self-learn to platforms used in 25+ countries \u2014 proves I can turn vision
+    into impact.\n\nI don\u2019t stop at solving problems \u2014 I anticipate the
+    future and design solutions that last.\n\nI bring the edge of AI research, the
+    precision of engineering, and the hunger of a founder who won\u2019t quit.\n\nHiring
+    me isn\u2019t about filling a role \u2014 it\u2019s about securing the person
+    who will push your company into the future before others even see it coming."
+  githubLink: 
+  liveDemoLink: 

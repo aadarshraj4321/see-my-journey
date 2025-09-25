@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: Debugger
+  m_EditorClassIdentifier: 
+  title: 'Most Important For Me Is: Debugging'
+  description: "I\u2019m a Debugger \u2014 I don\u2019t just write code, I break
+    problems until they surrender.\n\nWhen systems fail, I see patterns others miss
+    and fix what no one else can.\nI\u2019ve debugged trading engines under 5ms latency,
+    AI pipelines that self-correct, and platforms serving thousands globally.\n\nProblems
+    aren\u2019t roadblocks for me \u2014 they\u2019re puzzles I\u2019m built to solve.\nHire
+    me, and you don\u2019t just get a developer \u2014 you get the problem-solver
+    your team calls when nothing else works."
+  githubLink: 
+  liveDemoLink: 

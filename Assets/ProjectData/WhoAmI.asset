@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: WhoAmI
+  m_EditorClassIdentifier: 
+  title: Who Am I
+  description: "I'm Aadarsh Raj, I build what others call impossible \u2014 ultra-fast
+    trading engines, AI models that adapt in real time, and platforms that scale
+    to millions without breaking.\n\nFrom 11th globally in Google Code-In to founding
+    an AI startup with 8,000+ users worldwide, I\u2019ve proven I don\u2019t just
+    dream \u2014 I deliver.\n\nI\u2019ve shipped products that move millions of dollars
+    daily, stopped fraud with 96% accurate ML systems, and built AI pipelines that
+    continuously self-improve.\n\nEvery challenge is fuel \u2014 the harder it gets,
+    the sharper I perform.\nI don\u2019t follow roadmaps, I create them \u2014 turning
+    complex AI research and engineering chaos into elegant, production-grade systems.\n\nSpeed,
+    precision, and scalability aren\u2019t buzzwords for me \u2014 they\u2019re my
+    baseline.\n\nWhether it\u2019s foundation models, RAG systems, or blockchain-integrated
+    AI, I push technology beyond its limits.\n\nI\u2019m not applying for a job \u2014
+    I\u2019m here to be the AI-driven unfair advantage your company never had before.\n"
+  githubLink: 
+  liveDemoLink: 

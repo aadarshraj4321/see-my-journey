@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: Grinding
+  m_EditorClassIdentifier: 
+  title: 'Why You Should Hire Me '
+  description: "I\u2019m not just a developer \u2014 I\u2019m a debugger and problem-solver
+    who thrives on fixing what others can\u2019t.\n\nFrom scaling AI startups to
+    architecting trading platforms, I\u2019ve proven I can deliver real-world, production-grade
+    solutions.\n\nI debug systems at scale, whether it\u2019s code, infrastructure,
+    or data pipelines, and make them run faster and smarter.\n\nRanked globally in
+    Google Code-in and awarded in national innovation contests, I bring both skill
+    and creativity.\n\nI turn complex problems into simple, scalable solutions that
+    actually work in production.\nHiring me means adding someone who doesn\u2019t
+    just code \u2014 I solve, fix, and make systems unbreakable."
+  githubLink: 
+  liveDemoLink: 

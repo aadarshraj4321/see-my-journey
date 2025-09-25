@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac99b975ae48446cb44b2707ee0ce59, type: 3}
+  m_Name: Autonomous Learning System
+  m_EditorClassIdentifier: 
+  title: 'Project: Autonomous Learning System For Large Language Models'
+  description: 'Engineered a self-correcting LLM pipeline using DPO + LoRA fine-tuning
+    for continuous real-time improvement.
+
+
+    Integrated a RAG-based grounding
+    system, reducing hallucinations while boosting factual accuracy.
+
+
+    Built
+    a preference-tuning engine to transform raw user feedback into structured datasets.
+
+
+    Deployed
+    an automated evaluation pipeline with A/B testing and LLM-as-a-Judge scoring
+    for reliable performance tracking.'
+  githubLink: https://github.com/aadarshraj4321/Autonomous-Learning-System-for-Language-Models
+  liveDemoLink: https://github.com/aadarshraj4321/Autonomous-Learning-System-for-Language-Models
