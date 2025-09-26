@@ -921,8 +921,8 @@ GameObject:
   - component: {fileID: 505948259969723462}
   - component: {fileID: 5488263374734669285}
   - component: {fileID: 4042892542847532225}
-  - component: {fileID: 4856891285025676917}
-  - component: {fileID: -70661696478472870}
+  - component: {fileID: -2377591658937286108}
+  - component: {fileID: -5014038772904242158}
   m_Layer: 0
   m_Name: Spider_Fuga_Blue_Green
   m_TagString: Untagged
@@ -1026,7 +1026,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4856891285025676917
+--- !u!114 &-2377591658937286108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1035,14 +1035,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7047129551436613441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e654b878d8d64faf911fb7e981eca71, type: 3}
+  m_Script: {fileID: 11500000, guid: d44c7b998cb99421ab989498600eda03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
   deathEffectPrefab: {fileID: 3548588485384254792, guid: 0b600da43dff34562a2ebe970a99d453,
     type: 3}
   deathSound: {fileID: 8300000, guid: 4889b23e45038409eb2bb7cb673a1688, type: 3}
---- !u!114 &-70661696478472870
+--- !u!114 &-5014038772904242158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1054,9 +1054,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce20acd6c29be403da745ea5145e2595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
+  activationRange: 20
+  attackDamage: 2
   attackCooldown: 1
-  hummingSoundLoop: {fileID: 8300000, guid: 54eb09696d94642828b1ddb556db3ba4, type: 3}
 --- !u!1 &7275547608370703385
 GameObject:
   m_ObjectHideFlags: 0

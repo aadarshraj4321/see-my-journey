@@ -1,80 +1,81 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-// This script requires the NEW InsectHealth script to be on the same object.
-[RequireComponent(typeof(InsectHealth))]
+[RequireComponent(typeof(InsectHealth_v2))]
 [RequireComponent(typeof(NavMeshAgent))]
 public class InsectAI_v2 : MonoBehaviour
 {
-    [Header("Combat Settings")]
+    [Header("Behavior")]
+    public float activationRange = 20f;
+    
+    [Header("Combat")]
     public int attackDamage = 5;
     public float attackCooldown = 1.0f;
-
-    [Header("Audio")]
-    public AudioClip hummingSoundLoop;
     
-    // Private variables
+    // --- Private Instance Variables ---
     private NavMeshAgent agent;
     private Transform player;
-    private InsectHealth insectHealth; // Reference to the NEW health script
-    private AudioSource audioSource;
+    private bool isSleeping = true;
     private float lastAttackTime = 0f;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        insectHealth = GetComponent<InsectHealth>();
-
-        // Setup Audio
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.spatialBlend = 1.0f;
-        audioSource.volume = 0.6f;
-        if (hummingSoundLoop != null)
-        {
-            audioSource.clip = hummingSoundLoop;
-            audioSource.loop = true;
-            audioSource.Play();
-        }
-
-        // Find the player
+        
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerObject != null)
+        if (playerObject != null) player = playerObject.transform;
+
+        // Start asleep
+        agent.isStopped = true;
+    }
+
+    // OnDestroy is called by Unity automatically when this GameObject is destroyed.
+    void OnDestroy()
+    {
+        // When this insect is destroyed, it tells the manager.
+        // We check if the Instance exists in case we are quitting the application.
+        if (InsectManager.Instance != null)
         {
-            player = playerObject.transform;
+            InsectManager.Instance.ReportDeath(this.gameObject);
         }
     }
 
     void Update()
     {
-        // If the insect is dead, stop everything.
-        if (insectHealth != null && insectHealth.health <= 0)
-        {
-            if (audioSource.isPlaying) audioSource.Stop();
-            if (agent.isStopped == false) agent.isStopped = true;
-            return;
-        }
-
         if (player == null) return;
 
-        // Chase the player
-        agent.SetDestination(player.position);
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= activationRange)
+        {
+            if (isSleeping)
+            {
+                isSleeping = false;
+                agent.isStopped = false;
+            }
+            agent.SetDestination(player.position);
+        }
+        else
+        {
+            if (!isSleeping)
+            {
+                isSleeping = true;
+                agent.isStopped = true;
+            }
+        }
     }
 
-    // Handle touch-based attacks
     private void OnCollisionStay(Collision collision)
     {
-        if (insectHealth != null && insectHealth.health <= 0) return;
+        if (isSleeping || Time.time < lastAttackTime + attackCooldown) return;
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Time.time >= lastAttackTime + attackCooldown)
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
             {
-                PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                if (playerHealth != null)
-                {
-                    playerHealth.TakeDamage(attackDamage);
-                    lastAttackTime = Time.time;
-                }
+                playerHealth.TakeDamage(attackDamage);
+                lastAttackTime = Time.time;
             }
         }
     }

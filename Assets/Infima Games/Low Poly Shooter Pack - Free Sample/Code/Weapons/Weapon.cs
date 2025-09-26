@@ -245,63 +245,54 @@ namespace InfimaGames.LowPolyShooterPack
         //     projectile.GetComponent<Rigidbody>().linearVelocity = projectile.transform.forward * projectileImpulse;   
         // }
         
-        public override void Fire(float spreadMultiplier = 1.0f)
+public override void Fire(float spreadMultiplier = 1.0f)
 {
-    if (muzzleBehaviour == null || playerCamera == null)
-        return;
+    if (muzzleBehaviour == null || playerCamera == null) return;
 
     Transform muzzleSocket = muzzleBehaviour.GetSocket();
-    
     animator.Play("Fire", 0, 0.0f);
     ammunitionCurrent = Mathf.Clamp(ammunitionCurrent - 1, 0, magazineBehaviour.GetAmmunitionTotal());
     muzzleBehaviour.Effect();
     
     Quaternion rotation = Quaternion.LookRotation(playerCamera.forward * 1000.0f - muzzleSocket.position);
     
-    if (Physics.Raycast(new Ray(playerCamera.position, playerCamera.forward),
-        out RaycastHit hit, maximumDistance, mask))
+    if (Physics.Raycast(new Ray(playerCamera.position, playerCamera.forward), out RaycastHit hit, maximumDistance, mask))
     {
         rotation = Quaternion.LookRotation(hit.point - muzzleSocket.position);
 
-        // --- START OF CORRECTED INTERACTION LOGIC ---
+        // --- START OF COMPLETE INTERACTION LOGIC ---
 
-        // Priority 1: Check if we hit an interactive portfolio target (UI panels)
         ShootableTarget target = hit.transform.GetComponent<ShootableTarget>();
         if (target != null)
         {
             target.OnHit();
         }
-        // Priority 2: If not a UI target, check if it was a STORY enemy
-        else
+        else 
         {
             EnemyHealth storyEnemy = hit.transform.GetComponent<EnemyHealth>();
             if (storyEnemy != null)
             {
                 storyEnemy.TakeDamage(1);
             }
-            // Priority 3: If it was NOT a story enemy, check if it was one of the NEW INSECTS
             else
             {
-                InsectHealth insect = hit.transform.GetComponent<InsectHealth>();
+                // Check for the NEW insect health script
+                InsectHealth_v2 insect = hit.transform.GetComponent<InsectHealth_v2>();
                 if (insect != null)
                 {
-                    // This is the only new part: we damage the insect using its new health script
                     insect.TakeDamage(1);
                 }
-                // Priority 4: If it was NOT an insect, THEN check if it was a pushable object
                 else
                 {
                     PushableObject pushable = hit.transform.GetComponent<PushableObject>();
                     if (pushable != null)
                     {
-                        // playerCamera.forward is the direction your gun is currently aiming.
                         pushable.GetPushed(playerCamera.forward);
                     }
                 }
             }
         }
-        
-        // --- END OF CORRECTED INTERACTION LOGIC ---
+        // --- END OF COMPLETE INTERACTION LOGIC ---
     }
         
     GameObject projectile = Instantiate(prefabProjectile, muzzleSocket.position, rotation);
