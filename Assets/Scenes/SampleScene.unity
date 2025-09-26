@@ -3108,7 +3108,7 @@ Transform:
   m_GameObject: {fileID: 249725411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.64, y: -79.04, z: 88.476}
+  m_LocalPosition: {x: 45.48, y: -81.83, z: 81.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3382,6 +3382,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295732828}
   m_Mesh: {fileID: 8552134717624371188, guid: e51efe8d1427a2440b19959cf84e8e23, type: 3}
+--- !u!1 &298688521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298688522}
+  m_Layer: 0
+  m_Name: insectSpawnFour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298688522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298688521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 76.12, y: 3.92, z: -5.783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1672462316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &312117356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,9 +3697,9 @@ MonoBehaviour:
       waveStartMusic: {fileID: 8300000, guid: 74abbbf1b1724e34b894191db38e10a0, type: 3}
       waveStartVO: {fileID: 8300000, guid: 74abbbf1b1724e34b894191db38e10a0, type: 3}
     sectionCompleteMessage: Now final why should you hire me
-  endlessEnemyPrefab: {fileID: 3687397923642218249, guid: 02bb9096ddded41aba11232034e196c2,
+  endlessEnemyPrefab: {fileID: 1452226265756982721, guid: d519a0565d871470fa6ebd5bf7ea6a4a,
     type: 3}
-  endlessSpawnInterval: 0.2
+  endlessSpawnInterval: 0.5
   spawnPoints:
   - {fileID: 835216351}
   - {fileID: 941595929}
@@ -5657,7 +5688,7 @@ Transform:
   m_GameObject: {fileID: 448400204}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000008181515, y: -0.9997325, z: 0.022000477, w: -0.007144656}
-  m_LocalPosition: {x: 14.04, y: 8.4, z: -23.91}
+  m_LocalPosition: {x: 14.04, y: 7.46, z: -23.87}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5797,8 +5828,10 @@ Transform:
   - {fileID: 505172636}
   - {fileID: 828483412}
   - {fileID: 249725412}
+  - {fileID: 1420580779}
   - {fileID: 1649220098}
   - {fileID: 1422568641}
+  - {fileID: 1586930368}
   - {fileID: 1659962739}
   - {fileID: 1001363330}
   - {fileID: 1249645794}
@@ -6174,7 +6207,7 @@ Transform:
   m_GameObject: {fileID: 488010441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: -76, z: 89.7}
+  m_LocalPosition: {x: 12, y: -83.02, z: 88.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6621,7 +6654,7 @@ Transform:
   m_GameObject: {fileID: 523901204}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.427, y: -75.543, z: 89.7}
+  m_LocalPosition: {x: -32.9, y: -84.33, z: 103.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6639,7 +6672,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.98039216, g: 0.54168665, b: 0.5137255, a: 1}
   m_Intensity: 13.42
-  m_Range: 13.98
+  m_Range: 17.2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7469,6 +7502,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2123104855}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &607996134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607996135}
+  m_Layer: 0
+  m_Name: insectSpawnThree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607996135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607996134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.83, y: 1.872, z: 12.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1672462316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &610911898
 GameObject:
   m_ObjectHideFlags: 0
@@ -13307,7 +13371,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.0990566, b: 0.0990566, a: 1}
   m_Intensity: 14.2
-  m_Range: 26.6
+  m_Range: 30.7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -19478,7 +19542,7 @@ Transform:
   m_GameObject: {fileID: 1359240570}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.279999, y: -75.543, z: 73.969}
+  m_LocalPosition: {x: -20.279999, y: -79.55, z: 73.969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19635,6 +19699,60 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1999998, y: 1, z: 0.19999999}
   m_Center: {x: -0.000000059604645, y: 0.5, z: 0.00000047683716}
+--- !u!1 &1362772139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362772141}
+  - component: {fileID: 1362772140}
+  m_Layer: 0
+  m_Name: _InsectSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1362772140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362772139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc80b556df7064812baf1ea66a96509a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insectPrefabs:
+  - {fileID: 7047129551436613441, guid: 0876d01ba080940f2a6c9bc669e80b99, type: 3}
+  - {fileID: 2310011435404994519, guid: 15b3c87d43e2c45b3af161385a1fa4d8, type: 3}
+  spawnPoints:
+  - {fileID: 1945231019}
+  - {fileID: 1892546305}
+  - {fileID: 607996135}
+  - {fileID: 298688522}
+  maxInsects: 5
+  spawnInterval: 3
+--- !u!4 &1362772141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362772139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1365019607
 GameObject:
   m_ObjectHideFlags: 0
@@ -20665,6 +20783,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419139838}
   m_Mesh: {fileID: -8789847377850044163, guid: 01e65b1ad671b354fae4fdd2794e2a3e, type: 3}
+--- !u!1 &1420580778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420580779}
+  - component: {fileID: 1420580780}
+  m_Layer: 0
+  m_Name: Point Light_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420580779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420580778}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.2, y: -81.83, z: 91.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 470296673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1420580780
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420580778}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 14.2
+  m_Range: 13.98
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1422566017
 GameObject:
   m_ObjectHideFlags: 0
@@ -20799,7 +21014,7 @@ Transform:
   m_GameObject: {fileID: 1422568640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.09, y: -80.08, z: 44.66}
+  m_LocalPosition: {x: 22.13, y: -80.08, z: 44.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23035,6 +23250,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 234413297}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!1 &1586930367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586930368}
+  - component: {fileID: 1586930369}
+  m_Layer: 0
+  m_Name: Point Light_14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1586930368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586930367}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48.03, y: -80.08, z: 55.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 470296673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1586930369
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586930367}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 2
+  m_Color: {r: 1, g: 0.3726415, b: 0.3726415, a: 1}
+  m_Intensity: 8.21
+  m_Range: 13.98
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1631239492 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 938555729748598823, guid: 045e9026139b9d442b069aee976cb0fd,
@@ -23315,7 +23627,7 @@ Transform:
   m_GameObject: {fileID: 1649220096}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.900002, y: -75.38, z: 51.66}
+  m_LocalPosition: {x: 12.900002, y: -75.44, z: 51.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23563,7 +23875,7 @@ Transform:
   m_GameObject: {fileID: 1659962738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.377, y: -80.08, z: 44.71}
+  m_LocalPosition: {x: 37.377, y: -80.08, z: 44.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23789,6 +24101,10 @@ Transform:
   - {fileID: 1149858738}
   - {fileID: 50159383}
   - {fileID: 1193077948}
+  - {fileID: 1945231019}
+  - {fileID: 1892546305}
+  - {fileID: 607996135}
+  - {fileID: 298688522}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1676677980
@@ -27286,6 +27602,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1883793526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1892546304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1892546305}
+  m_Layer: 0
+  m_Name: insectSpawnTwo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1892546305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892546304}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 0, z: 48.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1672462316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1898035526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28540,6 +28887,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1942930803}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1945231018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945231019}
+  m_Layer: 0
+  m_Name: insectSpawnOne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945231019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945231018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1672462316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947799358
 GameObject:
   m_ObjectHideFlags: 0
@@ -39878,3 +40256,4 @@ SceneRoots:
   - {fileID: 1907151950}
   - {fileID: 448400207}
   - {fileID: 234413297}
+  - {fileID: 1362772141}
